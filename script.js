@@ -3,6 +3,8 @@ var timeSeconds = 15
 
 startButton.addEventListener("click", startGame);
 
+setInterval(startTime, 1000)
+
 function startGame() {
 
     // Start the Timer
