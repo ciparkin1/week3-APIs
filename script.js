@@ -1,8 +1,26 @@
+// var countdown = 50;
+var incrementEl = document.querySelector("#increment");
+var decrementEl = document.querySelector("#decrement");
+// var countEl = document.querySelector("#countdown");
 
-    
 // GIVEN I am taking a code quiz
 // WHEN I click the start button
+
+// function setCounterText() {
+
+//   countEl.textContent = countdown;
+//   decrementEl.addEventListener("click",function() {
+
+//     if (answerWrong > 0) {
+//       countdown -=5;
+//       var CounterText
+//     }
+
+//   })
+// }
 // THEN a timer starts and I am presented with a question
+
+
 
 document.querySelector("#start").addEventListener("click",function(){
   document.querySelector("#secondQuestion").style.display="none";
@@ -11,6 +29,7 @@ document.querySelector("#start").addEventListener("click",function(){
   document.querySelector("#fourthQuestion").style.display="none";
   document.querySelector("#start").style.display="none";
 });
+
 
 
 // WHEN I answer a question
