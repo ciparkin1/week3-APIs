@@ -86,3 +86,26 @@ body {
     top: 10px;
     right: 10px;
   }
+
+#firstQuestion{
+    display: none;
+} 
+#secondQuestion{
+    display: none;
+} 
+
+#thirdQuestion{
+    display: none;
+} 
+
+#fourthQuestion{
+  display: none;
+}  
+
+.on-click{
+  display: hide;
+}
+
+.end-screen{
+  display: hide;
+}
