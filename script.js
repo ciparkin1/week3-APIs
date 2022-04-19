@@ -1,75 +1,55 @@
-// var countdown = 50;
-var incrementEl = document.querySelector("#increment");
-var decrementEl = document.querySelector("#decrement");
-// var countEl = document.querySelector("#countdown");
-
-// GIVEN I am taking a code quiz
-// WHEN I click the start button
-
-// function setCounterText() {
-
-//   countEl.textContent = countdown;
-//   decrementEl.addEventListener("click",function() {
-
-//     if (answerWrong > 0) {
-//       countdown -=5;
-//       var CounterText
-//     }
-
-//   })
-// }
 // THEN a timer starts and I am presented with a question
-
+var timerEl = document.getElementById('countdown');
+var mainEl = document.getElementById('main');
 
 
 document.querySelector("#start").addEventListener("click",function(){
-  document.querySelector("#secondQuestion").style.display="none";
-  document.querySelector("#thirdQuestion").style.display="none";
-  document.querySelector("#firstQuestion").style.display="block";
-  document.querySelector("#fourthQuestion").style.display="none";
-  document.querySelector("#start").style.display="none";
+  document.querySelector(".secondQuestion").style.display="none";
+  document.querySelector(".thirdQuestion").style.display="none";
+  document.querySelector(".firstQuestion").style.display="block";
+  document.querySelector(".fourthQuestion").style.display="none";
+  document.querySelector(".start").style.display="none";
 });
 
 
 
 // WHEN I answer a question
 // THEN I am presented with another question
-document.querySelector("#firstQuestion").addEventListener("click",function(){
-  document.querySelector("#secondQuestion").style.display="block";
-  document.querySelector("#thirdQuestion").style.display="none";
-  document.querySelector("#firstQuestion").style.display="none";
-  document.querySelector("#fourthQuestion").style.display="none";
+document.querySelector(".firstQuestion").addEventListener("click",function(){
+  document.querySelector(".secondQuestion").style.display="block";
+  document.querySelector(".thirdQuestion").style.display="none";
+  document.querySelector(".firstQuestion").style.display="none";
+  document.querySelector(".fourthQuestion").style.display="none";
 });
 
-document.querySelector("#secondQuestion").addEventListener("click",function(){
-  document.querySelector("#firstQuestion").style.display="none";
-  document.querySelector("#thirdQuestion").style.display="block";
-  document.querySelector("#secondQuestion").style.display="none";
-  document.querySelector("#fourthQuestion").style.display="none";
+document.querySelector(".secondQuestion").addEventListener("click",function(){
+  document.querySelector(".firstQuestion").style.display="none";
+  document.querySelector(".thirdQuestion").style.display="block";
+  document.querySelector(".secondQuestion").style.display="none";
+  document.querySelector(".fourthQuestion").style.display="none";
 });
 
-document.querySelector("#thirdQuestion").addEventListener("click",function(){
-  document.querySelector("#firstQuestion").style.display="none";
-  document.querySelector("#secondQuestion").style.display="none";
-  document.querySelector("#thirdQuestion").style.display="none";
-  document.querySelector("#fourthQuestion").style.display="block";
+document.querySelector(".thirdQuestion").addEventListener("click",function(){
+  document.querySelector(".firstQuestion").style.display="none";
+  document.querySelector(".secondQuestion").style.display="none";
+  document.querySelector(".thirdQuestion").style.display="none";
+  document.querySelector(".fourthQuestion").style.display="block";
 });
 
-document.querySelector("#fourthQuestion").addEventListener("click",function(){
-  document.querySelector("#firstQuestion").style.display="none";
-  document.querySelector("#secondQuestion").style.display="none";
-  document.querySelector("#thirdQuestion").style.display="none";
-  document.querySelector("#fourthQuestion").style.display="none";
+document.querySelector(".fourthQuestion").addEventListener("click",function(){
+  document.querySelector(".firstQuestion").style.display="none";
+  document.querySelector(".secondQuestion").style.display="none";
+  document.querySelector(".thirdQuestion").style.display="none";
+  document.querySelector(".fourthQuestion").style.display="none";
   document.querySelector("#end-screen").style.display="block";
-
 
 });
 
 document.querySelector("#submit").addEventListener("click",function(){
-  document.querySelector("#firstQuestion").style.display="none";
-  document.querySelector("#secondQuestion").style.display="none";
-  document.querySelector("#thirdQuestion").style.display="none";
-  document.querySelector("#fourthQuestion").style.display="none";
+  document.querySelector(".firstQuestion").style.display="none";
+  document.querySelector(".secondQuestion").style.display="none";
+  document.querySelector(".thirdQuestion").style.display="none";
+  document.querySelector(".fourthQuestion").style.display="none";
   document.querySelector("#highscores").style.display="block";
 
 
@@ -79,8 +59,9 @@ document.querySelector("#submit").addEventListener("click",function(){
 
 // WHEN I answer a question incorrectly
 // THEN time is subtracted from the clock
-var timerEl = document.getElementById('countdown');
-var mainEl = document.getElementById('main');
+
+var incrementEl = document.querySelector("#increment");
+var decrementEl = document.querySelector("#decrement");
 
 
 // Timer that counts down from 5
@@ -134,4 +115,20 @@ countdown();
 // THEN the game is over
 // WHEN the game is over
 // THEN I can save my initials and my score
-// ```
+// // ```
+
+
+// var firstQuestion = document.querySelector(".firstQuestion").childNodes[i];
+// var secondQuestion = document.querySelector(".secondQuestion").childNodes[i];
+// var thirdQuestion = document.querySelector(".thirdQuestion").childNodes[i];
+// var fourthQuestion = document.querySelector(".fourthQuestion").childNodes[i];
+
+// for (var i = 0; i < score.length; i++) {
+// score();
+// }
+
+// function score(){
+ 
+//   var = 
+
+// }

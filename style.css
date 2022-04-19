@@ -4,13 +4,13 @@ body {
   }
   
   a {
-    color: #563d7c;
+    color: #9d35e2;
     text-decoration: none;
     transition: color 0.1s;
   }
   
   a:hover {
-    color: #8570a5;
+    color: #e930d9;
   }
   
   button {
@@ -27,11 +27,11 @@ body {
   }
   
   button:hover {
-    background-color: #8570a5;
+    background-color: #44dbcc;
   }
   
   .choices button {
-    display: block;
+    display:none;
   }
   
   input[type="text"] {
@@ -45,12 +45,15 @@ body {
   }
   
   li {
-    padding: 5px;
+    padding: 10px;
     list-style: decimal inside none;
   }
   
-  li:nth-child(odd) {
-    background-color: #f3edfc;
+  .firstQuestion{
+
+    color: #563d7c;
+    font-size:x-large;
+
   }
   
   .wrapper {
@@ -62,7 +65,7 @@ body {
     display: none;
   }
   
-  .start {
+  #start {
     text-align: center;
   }
   
@@ -87,18 +90,18 @@ body {
     right: 10px;
   }
 
-#firstQuestion{
-    display: none;
-} 
-#secondQuestion{
-    display: none;
-} 
+  .firstQuestion{
+      display: none;
+  } 
+  .secondQuestion{
+      display: none;
+  } 
 
-#thirdQuestion{
-    display: none;
-} 
+  .thirdQuestion{
+      display: none;
+  } 
 
-#fourthQuestion{
-  display: none;
-}  
+  .fourthQuestion{
+    display: none;
+  }  
 
